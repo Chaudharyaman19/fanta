@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  overflow-x: hidden; /* Prevent horizontal scrolling caused by animations */
+}
+.main {
+  width: 100%;
+  height: auto;
+}
+nav {
+  width: 100%;
+  position: fixed;
+  height: 10vh;
+  color: white;
+  display: flex;
+  padding: 4vw 10vw;
+  z-index: 999;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  font-size: 1.5vw;
+  color: white;
+  text-decoration: none;
+}
+nav i {
+  font-size: 1.5vw;
+}
+.centernav {
+  display: flex;
+  gap: 2vw;
+}
+.fanta {
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 149, 0, 0.893), rgba(255, 0, 0, 0.865));
+}
+.one img {
+  z-index: 2;
+  height: 70vh;
+  width: 480px;
+}
+.one .orange {
+  top: 15%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  left: 32%;
+  z-index: 1;
+  position: absolute;
+  width: 170px;
+  height: auto;
+}
+.one .orange1 {
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  width: 210px;
+  height: 250px;
+  top: 58%;
+  right: 32%;
+  position: absolute;
+}
+
+.fant {
+  transition: 1s ease-in-out;
+  position: absolute;
+  color: white;
+  font-size: 20vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.one .leaf {
+  top: 30%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  left: 10%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.one .leaf1 {
+  top: 58%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  right: 25%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+
+.one .leaf2 {
+  top: 10%;
+  position: absolute;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  right: -1%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+}
+.two {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(rgba(255, 149, 0, 0.893), rgba(255, 0, 0, 0.865));
+  height: 100vh;
+}
+.left-two {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.left-two img {
+  width: 400px;
+
+  margin-top: 50px;
+  height: 300px;
+}
+.right-two {
+  padding: 0px 2px;
+  width: 50%;
+  display: flex;
+  gap: 5vh;
+  font-size: 20px;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.three {
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  gap: 5%;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: linear-gradient(rgba(255, 149, 0, 0.893), rgba(255, 0, 0, 0.865));
+}
+.card {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: white;
+}
+.card h1 {
+  font-size: 2vw;
+  margin-top: 60vh;
+  margin-left: -20px;
+}
+.card button {
+  border-radius: 20px;
+  background-color: orange;
+  border: none;
+  padding: 0.6vw 1.5vw;
+  font-size: 1vw;
+  margin-left: -20px;
+}
+.coca {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  top: 0%;
+  left: 8%;
+  height: 400px;
+  width: 250px;
+  position: absolute;
+}
+.logo {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  width: 60px;
+  height: 60px;
+}
+.pepsi {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  top: -15%;
+  height: 550px;
+  width: 550px;
+  position: absolute;
+}
+.card:nth-child(1) {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(
+    rgba(203, 142, 56, 0.893),
+    rgba(255, 0, 0, 0.865)
+  );
+}
+.card:nth-child(2) {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  background: linear-gradient(
+    rgba(192, 133, 49, 0.893),
+    rgba(216, 80, 80, 0.865)
+  );
+}
+.card:nth-child(3) {
+  background: linear-gradient(
+    rgba(203, 141, 54, 0.893),
+    rgba(255, 0, 0, 0.865)
+  );
+}
+.lemon {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  top: -13%;
+  width: 200px;
+  position: absolute;
+}
+.lemon1 {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1);
+  top: -13%;
+  width: 200px;
+  position: absolute;
+}
